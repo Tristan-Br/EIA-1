@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    justify-content: end;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+
+}
+a{
+    margin: 10px 10px 0px 0px;
+    color: aliceblue;
+    text-decoration: none;
+}
+header{
+    height: 400px;
+    background-image: url(Fertig42.png)    
+}
+#Tpose{
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 40px;
+}
+div{
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: #eaeaea;
+    height: 300px;
+}
+
+#Submit{
+    background-color: dimgray;
+}

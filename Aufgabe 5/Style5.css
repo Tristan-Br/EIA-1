@@ -15,9 +15,11 @@ a{
     
 }
 header{
-
+    animation: slideshow 15s infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
     height: 400px;
-    background-image: url(Fertig42.png)    
+    background-image: url(Fertig42.png);
 }
 
 #Logo{
@@ -28,8 +30,12 @@ header{
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 100px;
+    font-family: 'Sansita Swashed', cursive;
+    position: relative;
+    top: 80px;
 }
+
 div{
     width: 800px;
     display: block;
@@ -79,3 +85,28 @@ transform: scale(1.1);
 .insta:hover {
     opacity: 1;
 }
+
+@keyframes slideshow {
+    0% {
+  background-image: url(Fertig42.png);
+    }
+    50% {
+  background-image: url(lightning1.png);
+    }
+    100% {
+  background-image: url(Fertig42.png);
+    }
+  }
+
+.banner {
+    background-color: grey;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+

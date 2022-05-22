@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin:0px; 
+}
+
+body{
+    text-align: center;
+    background-color: #000;
+}
+
+.drumpad{
+    margin-top: 10px;
+}
+
+#play{
+    height: 100px;
+    width: 100px;
+    transition: all 0.4s;
+}
+
+.pad{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin: 1px;
+    transition: all 0,5s;
+}
+
+.trommel{
+    background-color: #FF0000;
+}
+
+.note{
+    background-color: #0000FF;
+}
+
+.lachen{
+    background-color: #FFFF00;
+}
+
+
+

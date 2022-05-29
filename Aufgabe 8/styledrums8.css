@@ -23,19 +23,21 @@ body{
     height: 150px;
     width: 150px;
     margin: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
     transition: all 0,5s;
 }
 
 .trommel{
-    background-color: #FF0000;
+    background: linear-gradient(#3d94f6,#1f63d1);
 }
 
 .note{
-    background-color: #0000FF;
+    background: linear-gradient(#ff5ab0,#f0057e)
 }
-
 .lachen{
-    background-color: #FFFF00;
+    background: linear-gradient(#f6ab45,#c66601)
 }
 
 

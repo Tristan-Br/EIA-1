@@ -1,5 +1,4 @@
 function playSample(file: string): void {
-    
     var sound: HTMLAudioElement = new Audio("assets" + file);
     sound.play();
 }
@@ -42,13 +41,21 @@ document.querySelector("#laugh2").addEventListener("click", function (): void {
 
 
 var sounds: string[] = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.mp3", "snare.mp3"];
-var active: number = 0;
+var selector: number;
+var clickcount: number;
 
-function playBeat(): void {
-    setInterval(function (): void {
-        var sound: HTMLAudioElement = new Audio("assets" + sounds[active]);
-        sound.play();
-        active++;
-    },          500);
+function loop(): void {
+    clickcount++;
+    selector = 0;
+    document.getElementById("#playbutton").setAttribute("class", "fas fa-stop");
+    if (clickcount == 1) {
+    }
+    if (clickcount == 2) {
+    document.getElementById("#playbutton").setAttribute("class", "fas fa-play");
+    clickcount = 0;
+    selector = 0;
 }
+}
+
+
 

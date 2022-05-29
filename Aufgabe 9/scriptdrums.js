@@ -1,5 +1,5 @@
 function playSample(file) {
-    var sound = new Audio("assets" + file);
+    var sound = new Audio("assets/" + file);
     sound.play();
 }
 document.querySelector("#hihat").addEventListener("click", function () {
@@ -33,9 +33,8 @@ var sounds = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.mp3", "snar
 var active = 0;
 function playBeat() {
     setInterval(function () {
-        var sound = new Audio("assets" + sounds[active]);
+        var sound = new Audio("assets/" + sounds[active]);
         sound.play();
         active++;
     }, 500);
 }
-//# sourceMappingURL=scriptdrums.js.map

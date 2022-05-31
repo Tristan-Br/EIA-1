@@ -1,5 +1,5 @@
 function playSample(file) {
-    var sound = new Audio("assets/" + file);
+    var sound = new Audio("assets" + file);
     sound.play();
 }
 document.querySelector("#hihat").addEventListener("click", function () {
@@ -30,11 +30,23 @@ document.querySelector("#laugh2").addEventListener("click", function () {
     playSample("laugh-2.mp3");
 });
 var sounds = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.mp3", "snare.mp3"];
-var active = 0;
-function playBeat() {
-    setInterval(function () {
-        var sound = new Audio("assets/" + sounds[active]);
-        sound.play();
-        active++;
-    }, 500);
+var selector = 0;
+var clickcount = 0;
+document.querySelector("#playbutton").addEventListener("click", function () {
+    loop;
+});
+function loop() {
+    clickcount++;
+    selector = 0;
+    document.getElementById("#playbutton").classList.remove("fa-play");
+    document.getElementById("#playbutton").classList.add("fa-stop");
+    if (clickcount == 1) {
+    }
+    if (clickcount == 2) {
+        document.getElementById("#playbutton").classList.remove("fa-stop");
+        document.getElementById("#playbutton").classList.add("fa-play");
+        clickcount = 0;
+        selector = 0;
+    }
 }
+//# sourceMappingURL=scriptdrums.js.map

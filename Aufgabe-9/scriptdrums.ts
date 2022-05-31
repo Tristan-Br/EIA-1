@@ -44,14 +44,20 @@ var sounds: string[] = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.m
 var selector: number;
 var clickcount: number;
 
+document.querySelector("#playbutton").addEventListener("click", function (): void {
+    loop
+});
+
 function loop(): void {
     clickcount++;
     selector = 0;
-    document.getElementById("#playbutton").setAttribute("class", "fas fa-stop");
+    document.getElementById("#playbutton").classList.remove("fa-play");
+    document.getElementById("#playbutton").classList.add("fa-stop")
     if (clickcount == 1) {
     }
     if (clickcount == 2) {
-    document.getElementById("#playbutton").setAttribute("class", "fas fa-play");
+    document.getElementById("#playbutton").classList.remove("fa-stop");
+    document.getElementById("#playbutton").classList.add("fa-play")
     clickcount = 0;
     selector = 0;
 }

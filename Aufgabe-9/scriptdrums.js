@@ -38,13 +38,19 @@ document.querySelector("#playbutton").addEventListener("click", function () {
 function loop() {
     clickcount++;
     selector = 0;
-    document.getElementById("playbutton").classList.remove("fa-play");
-    document.getElementById("playbutton").classList.add("fa-stop");
     if (clickcount == 1) {
+        document.getElementById("playbutton").classList.remove("fa-play");
+        document.getElementById("playbutton").classList.add("fa-stop");
+        playbackID = setInterval(function () {
+            for (let i = 0; i < sounds.length; i++) {
+                setTimeout(function () { playSample(sounds[i]); }, i * 250);
+            }
+        }, sounds.length * 250);
     }
     if (clickcount == 2) {
         document.getElementById("playbutton").classList.remove("fa-stop");
         document.getElementById("playbutton").classList.add("fa-play");
+        clearInterval(playbackID);
         clickcount = 0;
         selector = 0;
     }

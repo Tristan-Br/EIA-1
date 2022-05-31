@@ -74,4 +74,17 @@ document.querySelector("#remixbutton").addEventListener("click", remix);
 function remix(): void {
     sounds = [];
     let filledsounds: any = new sounds(5).fill("Math.random()");
-} 
+    clickcount++;
+    selector = 0;
+    if (clickcount == 1) {
+        playbackID = setInterval(function(): void{
+            for (let i: number = 0; i < sounds.length; i++) {
+                setTimeout(function(:  void {playSample(sounds[i]); }, i * 250); )
+            }
+        }, sounds.length * 250; );
+if (clickcount == 2) {
+            clearInterval(playbackID);
+            clickcount = 0;
+            selector = 0;
+    }
+}

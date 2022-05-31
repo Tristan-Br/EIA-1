@@ -58,5 +58,22 @@ document.querySelector("#remixbutton").addEventListener("click", remix);
 function remix() {
     sounds = [];
     let filledsounds = new sounds(5).fill("Math.random()");
+    clickcount++;
+    selector = 0;
+    if (clickcount == 1) {
+        playbackID = setInterval(function () {
+            for (let i = 0; i < sounds.length; i++) {
+                setTimeout(function (, { playSample }) { }(sounds[i]));
+            }
+            i * 250;
+        });
+    }
+}
+sounds.length * 250;
+;
+if (clickcount == 2) {
+    clearInterval(playbackID);
+    clickcount = 0;
+    selector = 0;
 }
 //# sourceMappingURL=scriptdrums.js.map

@@ -1,5 +1,5 @@
 function playSample(file) {
-    var sound = new Audio("assets" + file);
+    var sound = new Audio("assets/" + file);
     sound.play();
 }
 document.querySelector("#hihat").addEventListener("click", function () {
@@ -38,13 +38,13 @@ document.querySelector("#playbutton").addEventListener("click", function () {
 function loop() {
     clickcount++;
     selector = 0;
-    document.getElementById("#playbutton").classList.remove("fa-play");
-    document.getElementById("#playbutton").classList.add("fa-stop");
+    document.getElementById("playbutton").classList.remove("fa-play");
+    document.getElementById("playbutton").classList.add("fa-stop");
     if (clickcount == 1) {
     }
     if (clickcount == 2) {
-        document.getElementById("#playbutton").classList.remove("fa-stop");
-        document.getElementById("#playbutton").classList.add("fa-play");
+        document.getElementById("playbutton").classList.remove("fa-stop");
+        document.getElementById("playbutton").classList.add("fa-play");
         clickcount = 0;
         selector = 0;
     }

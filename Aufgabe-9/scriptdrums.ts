@@ -44,6 +44,8 @@ var sounds: string[] = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.m
 var selector: number = 0;
 var clickcount: number = 0;
 
+let playbackID: number;
+
 document.querySelector("#playbutton").addEventListener("click", function (): void {
     loop
 });

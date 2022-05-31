@@ -32,6 +32,7 @@ document.querySelector("#laugh2").addEventListener("click", function () {
 var sounds = ["kick.mp3", "kick.mp3", "snare.mp3", "kick.mp3", "kick.mp3", "snare.mp3"];
 var selector = 0;
 var clickcount = 0;
+let playbackID;
 document.querySelector("#playbutton").addEventListener("click", function () {
     loop;
 });

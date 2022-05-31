@@ -46,9 +46,7 @@ var clickcount: number = 0;
 
 let playbackID: number;
 
-document.querySelector("#playbutton").addEventListener("click", function (): void {
-    loop
-});
+document.querySelector("#playbutton").addEventListener("click", loop);
 
 function loop(): void {
     clickcount++;

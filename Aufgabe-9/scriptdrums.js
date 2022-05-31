@@ -54,4 +54,9 @@ function loop() {
         selector = 0;
     }
 }
+document.querySelector("#remixbutton").addEventListener("click", remix);
+function remix() {
+    sounds = [];
+    let filledsounds = new sounds(5).fill("Math.random()");
+}
 //# sourceMappingURL=scriptdrums.js.map

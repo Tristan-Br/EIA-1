@@ -69,5 +69,9 @@ function loop(): void {
 }
 }
 
+document.querySelector("#remixbutton").addEventListener("click", remix);
 
-
+function remix(): void {
+    sounds = [];
+    let filledsounds: any = new sounds(5).fill("Math.random()");
+} 

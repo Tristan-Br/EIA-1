@@ -57,7 +57,7 @@ function loop(): void {
     }
     if (clickcount == 2) {
     document.getElementById("#playbutton").classList.remove("fa-stop");
-    document.getElementById("#playbutton").classList.add("fa-play")
+    document.getElementById("#playbutton").classList.add("fa-play");
     clickcount = 0;
     selector = 0;
 }

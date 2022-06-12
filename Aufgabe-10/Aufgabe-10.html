@@ -7,12 +7,13 @@
     <title>ToDo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="stylestodo.css">
-    <script src="scripttodo.js"></script>
+    <script src="scripttodofinal.js"></script>
 </head>
 <body>
     <header>
         <h1 class="überschrift" id="überschrift1">ToDo App</h1>
-        <h2 class="überschrift" id="unterschrift">1 in total</h2>
+        <h2 class="überschrift" id="counter">1</h2>
+        <h3 class="überschrift" id="unterschrift">in total</h3>
         <form id="eingabefeld">
             <input type="text" id="eingabe" placeholder="Add another task">
             <input type="submit" id="hinzufügen" value="Submit">
@@ -25,12 +26,12 @@
                     <div class="todo">
                         <div class="inhalt">
                             <label class="häckchen">
-                                <input type="checkbox" checked="checked">
+                                <input class="checkbox" type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
                             </label>
                             <input type="text" class="text" value="First ToDo" readonly>
                         </div>
-                        <div>
+                        <div class="löschen">
                             <button class="fas fa-trash-alt"></button>
                         </div>
                     </div>

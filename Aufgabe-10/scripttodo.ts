@@ -7,7 +7,7 @@ type Listenelement = {
 
 const liste = document.querySelector<HTMLUListElement>("#liste");
 const eingabefeld = document.querySelector<HTMLFormElement>("#eingabefeld");
-const eingabe = document.querySelector<HTMLInputElement>("eingabe");
+const eingabe = document.querySelector<HTMLUListElement>("eingabe");
 
 document.querySelector("#eingabefeld").addEventListener<keyof ElementEventMap>("submit", e => {
     e.preventDefault();
@@ -19,11 +19,8 @@ document.querySelector("#eingabefeld").addEventListener<keyof ElementEventMap>("
         komplett: false
     };
 
-    addListItem(todo)
+    addListItem(todo);
 });
 
 function addListItem(newtodo: Listenelement){
-    const item = document.createElement("li");
-    const label = document.createElement("label")
-    const checkbox = document.createElement("input")
 }

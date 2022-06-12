@@ -13,8 +13,5 @@ document.querySelector("#eingabefeld").addEventListener("submit", e => {
     addListItem(todo);
 });
 function addListItem(newtodo) {
-    const item = document.createElement("li");
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
 }
 //# sourceMappingURL=scripttodo.js.map

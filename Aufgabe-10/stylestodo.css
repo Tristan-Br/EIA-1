@@ -1,0 +1,82 @@
+
+header{
+    background-color: #a9a9a9;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.überschrift{
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+#überschrift1{
+    font-size: 70px;
+}
+
+#unterschrift{
+    font-size: 30px;
+    color: #3f3f3f;
+}
+
+
+body{
+    background-color: #c5d6c4;
+    margin-top: 0px;
+    height: 500px;
+}
+
+#eingabefeld{
+    display: flex;
+    justify-content: center;
+}
+
+#eingabe{
+    display: flex;
+    background-color: #3f3f3f;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: #3f3f3f;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#hinzufügen{
+    background-color: #967bb6;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: #967bb6;
+}
+
+.todo{
+   display: flex;
+   justify-content: space-between;
+}
+
+.text{
+    background-color: #3f3f3f;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #a9a9a9;
+    border-color: #3f3f3f;
+}
+
+.fas{
+    font-size: 41px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ff4040;
+    border-color: #ff4040;
+}
+
+

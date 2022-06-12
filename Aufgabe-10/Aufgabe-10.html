@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="stylestodo.css">
+    <script src="scripttodo.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="überschrift" id="überschrift1">ToDo App</h1>
+        <h2 class="überschrift" id="unterschrift">1 in total</h2>
+        <form id="eingabefeld">
+            <input type="text" id="eingabe" placeholder="Add another task">
+            <input type="submit" id="hinzufügen" value="Submit">
+        </form>
+    </header>
+
+    <main>
+       <section class="liste">
+               <div id="todos">
+                    <div class="todo">
+                        <div class="inhalt">
+                            <label class="häckchen">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <input type="text" class="text" value="First ToDo" readonly>
+                        </div>
+                        <div>
+                            <button class="fas fa-trash-alt"></button>
+                        </div>
+                    </div>
+               </div>
+       </section>
+    </main>
+</body>
+</html>
